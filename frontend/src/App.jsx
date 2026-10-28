@@ -1,9 +1,15 @@
+import About from "./components/About";
+import Achievements from "./components/Achievements";
+import Contact from "./components/Contact";
+import Skills from "./components/Skills";
+
 function Navbar() {
   return (
     <nav className="navbar">
       <a href="#" className="navbar-brand">Heet.</a>
 
       <div className="navbar-links">
+        <a href="#">Home</a>
         <a href="#projects" >Projects</a>
         <a href="#about" >About</a>
         <a href="#contact" >Contact</a>
@@ -13,19 +19,37 @@ function Navbar() {
 }
 
 function Hero() {
-
-  function handleClick() {
-    alert("Let's view all of my projects!");
-  }
-
   return (
-    <section className="hero">
-      <h1>I build things for the web.</h1>
-      <p>I'm a full stack developer who builds responsive websites and practical web applications</p>
-      <a href="#projects">View my work</a>
+    <section className="hero" id="home">
+      <p className="hero-eyebrow">
+        HEY, I'M <span>HEET JAIN</span>
+      </p>
+
+      <h1>
+        Building ideas into
+        <span> web experiences.</span>
+      </h1>
+
+      <p className="hero-description">
+        I'm a BTech Computer Science student
+        exploring full-stack development and building
+        practical applications with modern web technologies.
+      </p>
+
+      <div className="hero-actions">
+        <a href="#projects">Explore my projects ↗</a>
+        <a href="#contact" className="hero-secondary">
+          Get in touch
+        </a>
+      </div>
+
+      <p className="hero-note">
+        Currently learning, building, and improving.
+      </p>
     </section>
-  )
+  );
 }
+
 
 function ProjectCard({ name, description, liveUrl, image }) {
   return (
@@ -71,7 +95,7 @@ function Projects() {
 
   return (
     <section id="projects" className="projects">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
 
       <div className="projects-grid">
         {projects.map((project) => (
@@ -94,6 +118,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <Projects />
+      <About />
+      <Skills />
+      <Achievements />
+      <Contact />
     </main>
   )
 }
