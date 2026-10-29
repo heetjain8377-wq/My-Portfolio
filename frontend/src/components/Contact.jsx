@@ -123,7 +123,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://mail.google.com/mail/?view=cm&to=heetjain8377@gmail.com"
+                href="mailto:heetjain8377@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Email me"
