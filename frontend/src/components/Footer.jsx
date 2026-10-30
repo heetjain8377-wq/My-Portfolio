@@ -39,7 +39,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                    href="https://wa.me/6265151365"
+                    href="https://wa.me/916265151365"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp"
@@ -49,7 +49,7 @@ const Footer = () => {
 
 
                 <a
-                    href="https://mail.google.com/mail/?view=cm&to=heetjain8377@gmail.com"
+                    href="mailto:heetjain8377@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Email me"
