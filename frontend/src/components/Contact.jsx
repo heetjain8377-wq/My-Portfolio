@@ -26,7 +26,7 @@ const Contact = () => {
     try {
       setStatus("Sending message...");
 
-      const response = await fetch("https://my-portfolio-by2h.onrender.com/api/contact", {
+      const response = await fetch("https://my-portfolio-o009.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
